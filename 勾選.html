@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+            <style>
+                    a{
+                    position:absolute;
+                    top:50px;
+                    left:400px;
+                    }
+                    </style>   
+        
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+
+          
+          <input id="1-checkbox" type="checkbox" value="好學生"/> 我是好學生<br><br><br>
+        
+        <input id="2-checkbox" type="checkbox" value="好學生"/> 我要翹課<br><br><br>
+
+        <input id="3-checkbox" type="checkbox" value="好學生"/> 我要打人<br><br><br>
+        
+        <button id="button">確定送出</button>
+        <script>
+            $("body").on("click","#button", function(){
+                if( $("#1-checkbox").prop("checked") ){ // 回傳布林值
+                    alert( "你是"+$("#1-checkbox").val() );
+                } else {
+                    alert( "你不是"+$("#1-checkbox").val() );
+                }
+            });
+        </script>
+    </head>
+    
+    <body>
+        <a>
+                123
+    </a>
+    </body>
+    </html>
